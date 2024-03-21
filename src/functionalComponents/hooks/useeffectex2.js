@@ -2,6 +2,8 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import Spiner from "../../components/spinner"
+import { Button, Table } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 
 const ProductsTable=()=>{
@@ -20,23 +22,27 @@ useEffect(()=>{
     return(
         <>
         <h1>APi products in a table</h1>
-        {
-        products.length>0
+        {products.length>0
         ?
-        products.map((eachobject)=>{
+        (<Table style={{ border: "2px solid black" }}>
+        <tbody>
+        {products.map((eachobject,index)=>{
             return(
-                <>
-                <table style={{border:"2px solid black"}}>
-                    <tr>
+                <tr key={index}>
                         <td>{eachobject.title}</td>
                         <td><img src={eachobject.image} alt="products" width={200} height={200}></img></td>
                         <td>{eachobject.price} </td>
+                        <td>
+                            <Button> <Link to={`/${eachobject.category}/${eachobject.id}`}>Click to see the product</Link> 
+                            </Button>
+                            
+                            </td>
                     </tr>
-                </table>
-                
-                </>
-            )
-        })
+        )
+        })}
+        </tbody>
+        </Table> 
+    )       
         :
         <Spiner></Spiner>
     }
