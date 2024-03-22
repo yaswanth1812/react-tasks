@@ -1,14 +1,18 @@
 
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbars from '../components/navbar/navbar'
-import ProductsTable from '../functionalComponents/hooks/useeffectex2'
+import { MessageInfo } from '../navigation/navigation1'
 
 
 function HomeScreen () {
+
+  const messageContent = useContext(MessageInfo)
+  const{Message, messageChanger} = messageContent
   return (
     <div>
-      <Navbars></Navbars>
-      <ProductsTable/>
+      <Navbars/>
+      <h2>{Message}</h2>
+      <button onClick={ messageChanger}>click to change</button>
     </div>
   )
 }

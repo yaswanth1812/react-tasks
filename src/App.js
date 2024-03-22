@@ -3,7 +3,9 @@ import NavigationStack from "./navigation/navigation1";
 
 function App() {
   return (
-<NavigationStack/>
+    
+ <NavigationStack/> 
+
 );
 }
 

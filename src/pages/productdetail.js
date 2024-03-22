@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Productdetail() {
+function ProductDetail() {
   return (
     <div>
-      productdetail
+      productDetail
     </div>
   )
 }
 
-export default Productdetail
+export default ProductDetail
