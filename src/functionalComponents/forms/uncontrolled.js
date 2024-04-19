@@ -6,7 +6,7 @@ const Uncontroll =()=>{
 
     const sub=(e)=>{
 e.preventDefault();
-const username=mailname.current.value
+const username=mailname.current.value 
 const password=passref.current.value
 
 if(username.length>8 && password.length>8){
