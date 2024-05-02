@@ -5,7 +5,6 @@ function Effectprop(props) {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    // Update the document title with the count whenever count or message changes
     document.title = `Count: ${count} | Message: ${message}`;
   }, [count, message]); // Dependency array specifies when the effect should run
 

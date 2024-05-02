@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 const RefExample1 = () => {
     const data = useRef(null);
 
-    const submithandler = e =>{
+    const submitHandler = e =>{
         e.preventDefault();
         console.log(data.current.value)
     }
@@ -15,7 +15,7 @@ const RefExample1 = () => {
      
   return (
     <div>
-      <form onSubmit={submithandler}>
+      <form onSubmit={submitHandler}>
         <input ref={data} type="text" placeholder='enter the data'></input>
              <br></br>
 

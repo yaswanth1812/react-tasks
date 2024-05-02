@@ -140,7 +140,8 @@ const Controlled = () => {
           {
             usernameError
             ?
-            <h5 style={{color:"red"}}>{usernameError}</h5>:
+            <h5 style={{color:"red"}}>{usernameError}</h5>
+            :
             null
           }
           
