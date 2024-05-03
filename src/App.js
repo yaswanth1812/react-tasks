@@ -17,6 +17,9 @@ import RefExample1 from "./components/useRef/example1";
 import Factorial from "./functionalComponents/factorialsubmit/factorial";
 import Controlled from "./functionalComponents/forms/controlled";
 import Uncontroll from "./functionalComponents/forms/uncontrolled";
+import ToogleButtton from "./functionalComponents/togglebutton";
+import Reducerex1 from "./functionalComponents/useReducer/reducerex1";
+import ValueComponent from "./functionalComponents/value/value";
 import NavigationStack from "./navigation/navigation1";
 
 function App() {
@@ -36,7 +39,9 @@ function App() {
 /* <Example/> */
 /* <Effectprop/> */
 /* <ExampleCall/> */
-<Factorial/>
+/* <Factorial/> */
+/* <ValueComponent/>  ) */
+<ToogleButtton/>
   )
 }
 
