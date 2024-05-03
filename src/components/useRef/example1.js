@@ -6,10 +6,10 @@ const RefExample1 = () => {
     const submitHandler = e =>{
         e.preventDefault();
         console.log(data.current.value)
-    }
+    }               
     useEffect(()=>{
         data.current.focus();
-    },[]);
+    },[data]);
 
     
      
